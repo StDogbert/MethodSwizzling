@@ -6,17 +6,18 @@
 //  Copyright (c) 2013 Alex. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseFooClass.h"
+#import "BaseFooClass+secondFooExtension.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        BaseFooClass* object = [[BaseFooClass alloc] init];
+        object.message = @"My message";
+        [object baseFooMethod];
     }
+    
     return 0;
 }
 

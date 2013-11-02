@@ -10,6 +10,9 @@
 		844ED5DC1824885000EE4084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844ED5DB1824885000EE4084 /* Foundation.framework */; };
 		844ED5DF1824885000EE4084 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ED5DE1824885000EE4084 /* main.m */; };
 		844ED5E31824885000EE4084 /* MethodSwizzling.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 844ED5E21824885000EE4084 /* MethodSwizzling.1 */; };
+		844ED5EB18250ECE00EE4084 /* BaseFooClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ED5EA18250ECE00EE4084 /* BaseFooClass.m */; };
+		844ED5EE1825105D00EE4084 /* BaseFooClass+firstFooExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ED5ED1825105D00EE4084 /* BaseFooClass+firstFooExtention.m */; };
+		844ED5F11825107300EE4084 /* BaseFooClass+secondFooExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 844ED5F01825107300EE4084 /* BaseFooClass+secondFooExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,13 @@
 		844ED5DE1824885000EE4084 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		844ED5E11824885000EE4084 /* MethodSwizzling-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MethodSwizzling-Prefix.pch"; sourceTree = "<group>"; };
 		844ED5E21824885000EE4084 /* MethodSwizzling.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MethodSwizzling.1; sourceTree = "<group>"; };
+		844ED5E918250ECE00EE4084 /* BaseFooClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFooClass.h; sourceTree = "<group>"; };
+		844ED5EA18250ECE00EE4084 /* BaseFooClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFooClass.m; sourceTree = "<group>"; };
+		844ED5EC1825105D00EE4084 /* BaseFooClass+firstFooExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseFooClass+firstFooExtention.h"; sourceTree = "<group>"; };
+		844ED5ED1825105D00EE4084 /* BaseFooClass+firstFooExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseFooClass+firstFooExtention.m"; sourceTree = "<group>"; };
+		844ED5EF1825107300EE4084 /* BaseFooClass+secondFooExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseFooClass+secondFooExtension.h"; sourceTree = "<group>"; };
+		844ED5F01825107300EE4084 /* BaseFooClass+secondFooExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseFooClass+secondFooExtension.m"; sourceTree = "<group>"; };
+		844ED5F218251FD500EE4084 /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +83,16 @@
 		844ED5DD1824885000EE4084 /* MethodSwizzling */ = {
 			isa = PBXGroup;
 			children = (
+				844ED5E01824885000EE4084 /* Supporting Files */,
 				844ED5DE1824885000EE4084 /* main.m */,
 				844ED5E21824885000EE4084 /* MethodSwizzling.1 */,
-				844ED5E01824885000EE4084 /* Supporting Files */,
+				844ED5E918250ECE00EE4084 /* BaseFooClass.h */,
+				844ED5EA18250ECE00EE4084 /* BaseFooClass.m */,
+				844ED5EC1825105D00EE4084 /* BaseFooClass+firstFooExtention.h */,
+				844ED5ED1825105D00EE4084 /* BaseFooClass+firstFooExtention.m */,
+				844ED5EF1825107300EE4084 /* BaseFooClass+secondFooExtension.h */,
+				844ED5F01825107300EE4084 /* BaseFooClass+secondFooExtension.m */,
+				844ED5F218251FD500EE4084 /* defines.h */,
 			);
 			path = MethodSwizzling;
 			sourceTree = "<group>";
@@ -139,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844ED5EB18250ECE00EE4084 /* BaseFooClass.m in Sources */,
 				844ED5DF1824885000EE4084 /* main.m in Sources */,
+				844ED5F11825107300EE4084 /* BaseFooClass+secondFooExtension.m in Sources */,
+				844ED5EE1825105D00EE4084 /* BaseFooClass+firstFooExtention.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
